@@ -1,8 +1,10 @@
 const express =require ('express');
 const mongoose =require ('mongoose');
 
+
 const studentroute=require('./route/studentroutes.js')
 const adminroute=require('./route/adminroute.js')
+
 
  const app=express();
  app.use(express.json());

@@ -30,6 +30,9 @@ const students= new mongoose.Schema({
         type:String,
         required:true
 
+    },
+    uploadphoto:{
+        type:String
     }
 });
 module.exports = mongoose.model('student', students)

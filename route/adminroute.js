@@ -12,7 +12,7 @@ let corsOptions = {
 route.post('/addadmin', cors(corsOptions), (req, res) => {
     const mr = new adminmodel(req.body);
     mr.save();
-    res.status(201).json(mr)
+    res.status(201).json(mr) 
 })
 
 route.post('/login', cors(corsOptions), async (req, res) => {
